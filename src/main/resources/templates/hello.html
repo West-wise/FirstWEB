@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/hi.css}">
+  <style>
+    button:hover{background-color:black; color: #ffffff; font-size:150%;
+    }
+  </style>
+  <title>Login Page</title>
+</head>
+<body>
+<div class="container">
+  <form action="/authenticate" method="post">
+    <h1>Login</h1>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="login">Submit</button>
+  </form>
+</div>
+</body>
+</html>
